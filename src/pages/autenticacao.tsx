@@ -17,7 +17,7 @@ export default function Autenticacao() {
         }
     }
     return (
-        <div className={`flex h-screen items-center justify-center`}>
+        <div className={`flex h-screen items-center justify-center overflow-hidden`}>
             <div className={`hidden md:block md:w-1/2 lg:w-2/3`}>
                 <img 
                     src="https://source.unsplash.com/random" 
@@ -26,7 +26,7 @@ export default function Autenticacao() {
                 />
             </div>
             <div className="m-10 w-full md:w-1/2 lg:w-1/3">
-                <h1 className={`text-xl font-bold mb-5`}>
+                <h1 className={`text-3xl font-bold mb-5`}>
                     {modo === 'login' ? 'Entre com Sua Conta' : 'Cadastre-se na Plataforma'}
                 </h1>
                 <AuthInput
@@ -68,7 +68,7 @@ export default function Autenticacao() {
                     <p className="mt-8">
                         Novo por aqui?
                         <a onClick={() => setModo('cadastro')} className={`text-blue-500 hover:text-blue-700 font-semibold cursor-pointer pl-2`}>
-                            Crie uma conta gratuitamente
+                            Crie uma Conta Gratuitamente
                         </a>
                     </p>
                 ) : (
